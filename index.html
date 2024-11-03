@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon standard -->
+    <link rel="icon" href="assets/logos/.png" type="image/x-icon">
+
+    <title>Andrea's Cart</title>
+</head>
+
+
+<body class="font-[Roboto] font-sans bg-gray-200">
+
+    <!-- Header -->
+    <header id="#home" class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Andrea's Cart</a>
+            <nav class="space-x-6 hidden lg:flex">
+                <a href="#home" class="text-white hover:text-yellow-600">Home</a>
+                <a href="#shop" class="text-white hover:text-yellow-600">Shop</a>
+                <a href="#categories" class="text-white hover:text-yellow-600">Categories</a>
+                <a href="#contact" class="text-white hover:text-yellow-600">Contact</a>
+            </nav>
+            <div class="flex space-x-4">
+                <!-- Like Icon -->
+                <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                    <img src="assets/icons/like.png" alt="Like Icon"
+                        class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                </a>
+                <!-- Cart Icon -->
+                <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                    <img src="assets/icons/cart.png" alt="Cart Icon"
+                        class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 flex items-center justify-center"
+        style="background-image: url('hero-image.jpg');">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-black">Explore the Best Deals</h1>
+            <p class="text-lg text-gray-400 mt-2">Shop top-rated products with incredible discounts</p>
+            <a href="#"
+                class="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="#categories" class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Shop by Category</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Electronics -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="category1.jpg" alt="Category" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-lg font-semibold mt-4">Electronics</h3>
+            </div>
+            <!-- Fashion -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="category2.jpg" alt="Category" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-lg font-semibold mt-4">Fashion</h3>
+            </div>
+            <!-- Home & Living -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="category3.jpg" alt="Category" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-lg font-semibold mt-4">Home & Living</h3>
+            </div>
+            <!-- Sports -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="category4.jpg" alt="Category" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-lg font-semibold mt-4">Sports</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="#shop" class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Product Card-1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product1.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product1.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product1.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-4 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product4.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-5 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product5.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-6 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product6.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-7 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product7.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-8 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product8.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card-9 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <img src="product9.jpg" alt="Product" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Product Name</h3>
+                <p class="text-gray-600 mt-2">Brief product description goes here.</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800">$99.99</span>
+                    <div class="flex space-x-2">
+                        <!-- Like Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-like.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="#contact" class="bg-gray-800 text-gray-200 py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-semibold text-lg">Andrea's Cart</h3>
+                    <p class="mt-4 text-gray-400">The best online store for quality products at unbeatable prices.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Customer Service:</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:text-yellow-600">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-600">Returns</a></li>
+                        <li><a href="#" class="hover:text-yellow-600">Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Follow Us:</h3>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://facebook.com" target="_blank"
+                            class="hover:scale-110 transition-transform duration-300">
+                            <img src="assets/icons/facebook-icon.png" title="Facebook" alt="Facebook Logo"
+                                class="h-8 hover:filter hover:brightness-150">
+                        </a>
+                        <a href="https://instagram.com" target="_blank"
+                            class="hover:scale-110 transition-transform duration-300">
+                            <img src="assets/icons/instagram-icon.png" title="Instagram" alt="Instagram Logo"
+                                class="h-8 hover:filter hover:brightness-150">
+                        </a>
+                        <a href="https://twitter.com" target="_blank"
+                            class="hover:scale-110 transition-transform duration-300">
+                            <img src="assets/icons/x-icon.png" title="X" alt="Twitter Logo"
+                                class="h-8 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto text-center">
+                <!-- Development Logo Image -->
+                <img src="assets/logos/andrea-g-logo-text-white.png" alt="Logo di Andrea Guarneri"
+                    class="mx-auto h-8 w-auto mb-4">
+                <!-- Development Credit -->
+                <p class="text-sm text-gray-400 mb-2">Developed by Andrea Guarneri</p>
+                <p>&copy; 2024 Andrea's Cart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
