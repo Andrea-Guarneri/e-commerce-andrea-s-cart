@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
     <!-- Tailwind CSS  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -24,62 +27,65 @@
 <body class="font-[Roboto] font-sans bg-gray-200">
 
     <!-- Header -->
-    <header id="#home" class="bg-gray-800 shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header id="#home" class="bg-gray-800 shadow-lg sticky top-0 z-50 h-full max-h-24 flex items-center py-4">
+        <!-- Header container -->
+        <div class="flex h-full w-full justify-between container mx-auto px-4 items-center">
+
             <!-- Logo -->
-            <a href="#" class="text-2xl font-bold text-white">
-                <img src="assets/logos/andreas-cart-2.png" alt="Andrea's cart logo" class="h-12 sm:h-10 lg:h-12">
-            </a>
+            <div class="flex h-full items-center h-20">
+                <a href="" class="flex h-16">
+                    <img src="./assets/logos/andreas-cart-2.png" alt="" class="h-full w-full object-cover">
+                </a>
+            </div>
 
-            <!-- Desktop Navigation Links (hidden on mobile) -->
-            <nav class="space-x-6 hidden lg:flex">
-                <a href="#home" class="text-white hover:text-yellow-600">Home</a>
-                <a href="#shop" class="text-white hover:text-yellow-600">Shop</a>
-                <a href="#categories" class="text-white hover:text-yellow-600">Categories</a>
-                <a href="#contact" class="text-white hover:text-yellow-600">Contact</a>
-            </nav>
+            <!-- Central Navbar -->
+            <div class="hidden xl:flex text-white h-full gap-x-4">
 
-            <!-- Icons and Search Bar -->
-            <div class="flex space-x-4 items-center sm:items-center">
-                <!-- Search Bar -->
-                <div class="hidden lg:flex items-center bg-white rounded-full px-3 py-1">
-                    <img src="assets/icons/search.png" alt="Search Icon" class="h-4 w-4 mr-2">
-                    <input type="text" placeholder="Search"
-                        class="bg-transparent focus:outline-none text-sm text-gray-800">
+                <a href="#" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Home</a>
+                <a href="#shop" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Shop</a>
+                <a href="#categories"
+                    class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Categories</a>
+                <a href="#" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Today's
+                    Deals</a>
+            </div>
+
+            <!-- Right Navbar -->
+            <div class="flex items-center">
+                <div class=" h-10 flex gap-x-4 items-center">
+
+                    <!-- searchbar -->
+                    <div class="hidden md:flex h-full items-center px-4 py-2 rounded-full bg-white gap-2">
+                        <img src="./assets/icons/search.png" class="h-6 cursor-pointer" alt="">
+                        <input type="text" placeholder="Search for a product" class="bg-transparent outline-none">
+                    </div>
+
+                    <!-- favorites -->
+                    <img src="./assets/icons/favorite.png"
+                        class="hidden md:flex h-full cursor-pointer hover:scale-110 transition-all duration-5" alt="">
+
+                    <!-- cart -->
+                    <img src="./assets/icons/cart.png"
+                        class="h-full  cursor-pointer hover:scale-110 transition-all duration-5" alt="">
+
+                    <!-- user -->
+                    <img src="./assets/icons/user.png"
+                        class="h-full cursor-pointer hover:scale-110 transition-all duration-5" alt="">
+
+                    <!-- dropdown -->
+                    <img src="./assets/icons/menu.png"
+                        class="h-full xl:hidden cursor-pointer hover:scale-110 transition-all duration-5" alt="">
+
                 </div>
-                <!-- Like, Cart, User Icons -->
-                <a href="#like" class="hover:scale-110 transition-transform duration-400">
-                    <img src="assets/icons/like.png" alt="Like Icon" title="like" class="h-6 w-6 sm:h-6 sm:w-6">
-                </a>
-                <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                    <img src="assets/icons/cart.png" alt="Cart Icon" title="cart" class="h-6 w-6 sm:h-6 sm:w-6">
-                </a>
-                <a href="#user" class="hover:scale-110 transition-transform duration-400">
-                    <img src="assets/icons/user.png" alt="User Icon" title="user" class="h-6 w-6 sm:h-6 sm:w-6">
-                </a>
             </div>
 
-            <!-- Mobile Hamburger Icon (visible on small screens) -->
-            <div class="lg:hidden flex items-center space-x-4">
-                <button class="lg:hidden">
-                    <img src="assets/icons/menu.png" alt="Menu Icon"
-                        class="h-6 w-6 hover:scale-110 transition-transform duration-400">
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Links (hidden by default, shown on small screens) -->
-        <div class="lg:hidden mt-2 space-y-2 px-6 bg-gray-800 text-white text-center">
-            <a href="#home" class="block hover:text-yellow-600">Home</a>
-            <a href="#shop" class="block hover:text-yellow-600">Shop</a>
-            <a href="#categories" class="block hover:text-yellow-600">Categories</a>
-            <a href="#contact" class="block hover:text-yellow-600">Contact</a>
         </div>
     </header>
 
 
+
+
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-96 flex items-center justify-center"
+    <section class="container mx-auto bg-cover bg-center h-96 flex items-center justify-center"
         style="background-image: url('hero-image.jpg');">
         <div class="text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-black">Explore the Best Deals</h1>
@@ -98,7 +104,7 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="#categories" class="container mx-auto px-6 py-12">
+    <section id="categories" class="container mx-auto px-6 py-12">
         <h2 class="text-3xl font-semibold text-gray-800 mb-6">Shop by Category</h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -154,7 +160,7 @@
     </section>
 
     <!-- Featured Products Section -->
-    <section id="#shop" class="container mx-auto px-6 py-12">
+    <section id="shop" class="container mx-auto px-6 py-12">
         <h2 class="text-3xl font-semibold text-gray-800 mb-6">Featured Products</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
