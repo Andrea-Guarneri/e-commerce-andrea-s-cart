@@ -27,7 +27,7 @@
 <body class="font-[Roboto] font-sans bg-gray-200">
 
     <!-- Header -->
-    <header id="#home" class="bg-gray-800 shadow-lg sticky top-0 z-50 h-full max-h-24 flex items-center py-4">
+    <header id="home" class="bg-gray-800 shadow-lg sticky top-0 z-50 h-full max-h-24 flex items-center py-4">
         <!-- Header container -->
         <div class="flex h-full w-full justify-between container mx-auto px-4 items-center">
 
@@ -41,11 +41,11 @@
             <!-- Central Navbar -->
             <div class="hidden xl:flex text-white h-full gap-x-4">
 
-                <a href="#" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Home</a>
+                <a href="#home" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Home</a>
                 <a href="#shop" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Shop</a>
                 <a href="#categories"
                     class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Categories</a>
-                <a href="#" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Today's
+                <a href="#deals" class="flex my-auto h-full hover:text-yellow-600  transition-all duration-300">Today's
                     Deals</a>
             </div>
 
@@ -74,19 +74,17 @@
                     <!-- dropdown -->
                     <img src="./assets/icons/menu.png"
                         class="h-full xl:hidden cursor-pointer hover:scale-110 transition-all duration-5" alt="">
-
                 </div>
             </div>
-
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section plus background-image -->
     <section class="container mx-auto bg-cover bg-center h-96 flex items-center justify-center"
-        style="background-image: url('hero-image.jpg');">
+        style="background-image: url('assets/images/banner-hero-section/bg-e-commerce.webp');">
         <div class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-black">Explore the Best Deals</h1>
-            <p class="text-lg text-gray-400 mt-4">Shop top-rated products with incredible discounts</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-white">Explore the Best Deals</h1>
+            <p class="text-lg text-gray-200 mt-4">Shop top-rated products with incredible discounts</p>
 
             <!-- Large Search Bar in Hero Section -->
             <div class="mt-4 flex items-center bg-white rounded-full px-6 py-2 mx-auto w-full max-w-lg">
@@ -101,122 +99,318 @@
     </section>
 
     <!-- Today's Deals Section -->
-    <section class="bg-yellow-300 py-10">
+    <section id="deals" class="bg-yellow-400 py-10 mt-8">
         <div class="container mx-auto text-center">
-          <h2 class="text-3xl font-semibold text-gray-800 mb-6">Today's Special Offers</h2>
-          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Today's Special Offers</h2>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-            <!-- Special Offers Card 1 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -50%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
+                    <img src="assets/images/today's-deals/samsungqledtv.webp" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 50%
+                        </span>
+
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-2">
+                        <!-- Share Icon -->
+                        <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-share.png" alt="Share Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Like Icon -->
+                        <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                        <!-- Cart Icon -->
+                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Special Offers Card 2 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
+                    <img src="assets/images/today's-deals/jblheadphone.jpg" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 25%
+                        </span>
+
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$112,50</span>
+                            <span class="text-sm line-through text-gray-400">$150,00</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Share Icon -->
+                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-share.png" alt="Share Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Like Icon -->
+                            <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Cart Icon -->
+                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offers Card 3 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
+                    <img src="assets/images/today's-deals/samsungultras24.avif" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 30%
+                        </span>
+
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$665,00</span>
+                            <span class="text-sm line-through text-gray-400">$950,00</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Share Icon -->
+                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-share.png" alt="Share Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Like Icon -->
+                            <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Cart Icon -->
+                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offers Card 4 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
+                    <img src="assets/images/today's-deals/perfume-montblanc.webp" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 30%
+                        </span>
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$129,50</span>
+                            <span class="text-sm line-through text-gray-400">$185,00</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Share Icon -->
+                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-share.png" alt="Share Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Like Icon -->
+                            <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Cart Icon -->
+                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offers Card 5 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
+                    <img src="assets/images/today's-deals/kitchenaid.webp" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 25%
+                        </span>
+
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$337,46</span>
+                            <span class="text-sm line-through text-gray-400">$449,95</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Share Icon -->
+                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-share.png" alt="Share Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Like Icon -->
+                            <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Cart Icon -->
+                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offers Card 6 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/today's-deals/wisky.webp" alt="Offer 1"
+                        class="w-full object-cover cursor-pointer">
+                    <div class="p-6">
+
+                        <!-- Product Details -->
+                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam atque
+                            beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
+                            sequi.
+                            Aspernatur eligendi beatae soluta illo nulla.</p>
+
+                        <!-- Discount Badge -->
+                        <span
+                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
+                            Discount 30%
+                        </span>
+
+                        <!-- Price -->
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$227,50</span>
+                            <span class="text-sm line-through text-gray-400">$325,00</span>
+                        </div>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Shop
+                            Now</a>
+
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Share Icon -->
+                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-share.png" alt="Share Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Like Icon -->
+                            <a href="#like" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-favorite.png" alt="Like Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                            <!-- Cart Icon -->
+                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
+                                <img src="assets/icons/black-cart.png" alt="Cart Icon"
+                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Special Offers Card 2 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -25%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
-                </div>
-                </div>
-            </div>
-            <!-- Special Offers Card 3 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -30%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
-                </div>
-                </div>
-            </div>
-            <!-- Special Offers Card 4 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -30%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
-                </div>
-                </div>
-            </div>
-            <!-- Special Offers Card 5 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -25%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
-                </div>
-                </div>
-            </div>
-            <!-- Special Offers Card 6 -->
-            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="offer-image-1.jpg" alt="Offer 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                <p class="text-gray-600 my-2">Brief description of the product or offer goes here.</p>
-                
-                <!-- Discount Badge -->
-                <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                    -50%
-                </span>
-                
-                <div class="flex items-center justify-center mt-4">
-                    <span class="text-lg font-semibold text-red-600 mr-2">$19.99</span>
-                    <span class="text-sm line-through text-gray-400">$24.99</span>
-                </div>
-                </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
     <!-- Categories Section -->
     <section id="categories" class="container mx-auto px-6 py-12">
