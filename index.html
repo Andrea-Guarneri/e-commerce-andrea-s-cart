@@ -101,24 +101,31 @@
     <!-- Today's Deals Section -->
     <section id="deals" class="bg-yellow-400 container mx-auto px-6 py-12 mt-4 rounded-lg">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Today's Special Offers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 class="text-4xl font-bold text-zinc-950 mb-6">Today's Special Offers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 min-[1550px]:grid-cols-6 gap-8">
 
                 <!-- Special Offers Card 1 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
-                    <img src="assets/images/today's-deals/samsungqledtv.webp" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                    <div class="p-6">
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
 
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 50%
-                        </span>
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
@@ -126,288 +133,274 @@
                             elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-2">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-2">$4.249,00</span>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
                             <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-center space-x-2">
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
                         <!-- Shop now botton -->
                         <a href="#"
-                            class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
                             Now</a>
-                        <!-- Share Icon -->
-                        <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                            <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                        </a>
-                        <!-- Favorite Icon -->
-                        <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                            <img src="assets/icons/black-favorite.png" alt="Favorite Icon" title="Favorite"
-                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                        </a>
-                        <!-- Cart Icon -->
-                        <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                            <img src="assets/icons/black-cart.png" alt="Cart Icon"
-                                class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                        </a>
                     </div>
                 </div>
 
-                <!-- Special Offers Card 2 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
-                    <img src="assets/images/today's-deals/jblheadphone.jpg" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                    <div class="p-6">
-                        
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 25%
-                        </span>
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
+
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
-                            Aspernatur eligendi beatae soluta illo nulla.</p>
+                            Aspernatur eligendi beatae soluta illo nulla.ipsum dolor sit amet consectetur adipisicing
+                            elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-2">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-2">$112,50</span>
-                            <span class="text-sm line-through text-gray-400">$150,00</span>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
+                    </div>
 
-                        <div class="flex items-center justify-center space-x-2">
-                            <!-- Shop now botton -->
-                            <a href="#"
-                                class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
-                                Now</a>
-                            <!-- Share Icon -->
-                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Favorite Icon -->
-                            <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-favorite.png" alt="Favorite Icon" title="Favorite"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Cart Icon -->
-                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-cart.png" alt="Cart Icon" title="Cart"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                        </div>
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
+                            Now</a>
                     </div>
                 </div>
 
-                <!-- Special Offers Card 3 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
-                    <img src="assets/images/today's-deals/samsungultras24.avif" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                    <div class="p-6">
-                        
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 30%
-                        </span>
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
+
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
-                            Aspernatur eligendi beatae soluta illo nulla.Aspernatur eligendi beatae soluta illo
-                            nulla.ipsum dolor sit amet consectetur adipisicing elit.Laboriosam atque
-                            beatae sapiente,dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
+                            Aspernatur eligendi beatae soluta illo nulla.ipsum dolor sit amet consectetur adipisicing
+                            elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-2">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-2">$665,00</span>
-                            <span class="text-sm line-through text-gray-400">$950,00</span>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
+                    </div>
 
-                        <div class="flex items-center justify-center space-x-2">
-                            <!-- Shop now botton -->
-                            <a href="#"
-                                class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
-                                Now</a>
-                            <!-- Share Icon -->
-                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Favorite Icon -->
-                            <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-favorite.png" alt="Favorite Icon" title="Favorite"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Cart Icon -->
-                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-cart.png" alt="Cart Icon" title="Cart"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                        </div>
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
+                            Now</a>
                     </div>
                 </div>
 
-                <!-- Special Offers Card 4 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
-                    <img src="assets/images/today's-deals/perfume-montblanc.webp" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                        <div class="p-6">
-                        
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 30%
-                        </span>
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
+
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
-                            Aspernatur eligendi beatae soluta illo nulla.</p>
+                            Aspernatur eligendi beatae soluta illo nulla.ipsum dolor sit amet consectetur adipisicing
+                            elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-4">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$129,50</span>
-                            <span class="text-sm line-through text-gray-400">$185,00</span>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
+                    </div>
 
-                        <div class="flex items-center justify-center space-x-2">
-                            <!-- Shop now botton -->
-                            <a href="#"
-                                class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
-                                Now</a>
-                            <!-- Share Icon -->
-                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Favorite Icon -->
-                            <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-favorite.png" alt="Favorite Icon" title="Favorite"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Cart Icon -->
-                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-cart.png" alt="Cart Icon" title="Cart"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                        </div>
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
+                            Now</a>
                     </div>
                 </div>
 
-                <!-- Special Offers Card 5 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden p-4">
-                    <img src="assets/images/today's-deals/kitchenaid.webp" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                    <div class="p-6">
-                        
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 25%
-                        </span>
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
+
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
-                            Aspernatur eligendi beatae soluta illo nulla.dolore natus facilis vitae pariatur quisquam
-                            tempora a dolores molestias
-                            sequi.</p>
+                            Aspernatur eligendi beatae soluta illo nulla.ipsum dolor sit amet consectetur adipisicing
+                            elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-4">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$337,46</span>
-                            <span class="text-sm line-through text-gray-400">$449,95</span>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
+                    </div>
 
-                        <div class="flex items-center justify-center space-x-2">
-                            <!-- Shop now botton -->
-                            <a href="#"
-                                class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
-                                Now</a>
-                            <!-- Share Icon -->
-                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Favorite Icon -->
-                            <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-favorite.png" alt="Favorite Icon" title="Favorite"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Cart Icon -->
-                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-cart.png" alt="Cart Icon" title="Cart"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                        </div>
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
+                            Now</a>
                     </div>
                 </div>
 
-                <!-- Special Offers Card 6 -->
-                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="assets/images/today's-deals/wisky.webp" alt="Offer 1"
-                        class="w-full object-cover cursor-pointer">
-                    <div class="p-6">
+                <!-- Special Offers Card 1 -->
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden  p-2 flex flex-col">
 
-                        <!-- Discount Badge -->
-                        <span
-                            class="absolute top-4 right-4 bg-red-500 text-white text-md font-bold px-2 py-1 rounded-full">
-                            Discount 30%
-                        </span>
+                    <!-- Discount Badge -->
+                    <span class="absolute top-4 right-4 bg-red-600 text-white text-md font-bold px-2 py-1 rounded-lg">
+                        50% OFF
+                    </span>
+
+                    <!-- Product Image -->
+                    <div class="flex h-full w-full max-h-52 max-w-52 overflow-hidden mx-auto">
+                        <img src="assets/images/today's-deals/samsung_smarttv.webp" alt="Offer 1"
+                            class="h-full w-full object-cover cursor-pointer">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="p-6 flex flex-col gap-y-2">
 
                         <!-- Product Details -->
-                        <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-                        <p class="text-gray-600 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-2xl font-semibold text-gray-800 line-clamp-1">Product Name</h3>
+
+                        <p class="text-gray-600  line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Laboriosam atque
                             beatae sapiente, dolore natus facilis vitae pariatur quisquam tempora a dolores molestias
                             sequi.
-                            Aspernatur eligendi beatae soluta illo nulla.</p>
+                            Aspernatur eligendi beatae soluta illo nulla.ipsum dolor sit amet consectetur adipisicing
+                            elit.dolore natus facilis vitae pariatur quisquam tempora a dolores.</p>
 
                         <!-- Price -->
-                        <div class="flex items-center justify-center mt-4">
-                            <span class="text-2xl font-semibold text-red-600 mr-2 mt-4">$227,50</span>
-                            <span class="text-sm line-through text-gray-400">$325,00</span>
-                        </div>
-
-                        <div class="flex items-center justify-center space-x-2">
-                            <!-- Shop now botton -->
-                            <a href="#"
-                                class="mt-4 mb-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600">Buy
-                                Now</a>
-                            <!-- Share Icon -->
-                            <a href="#share" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-share.png" alt="Share Icon" title="Share"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Favorite Icon -->
-                            <a href="#favorite" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-favorite.png" alt="Like Icon" title="Favorite"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
-                            <!-- Cart Icon -->
-                            <a href="#cart" class="hover:scale-110 transition-transform duration-400">
-                                <img src="assets/icons/black-cart.png" alt="Cart Icon" title="Cart"
-                                    class="h-6 w-6 sm:h-6 sm:w-6 hover:filter hover:brightness-150">
-                            </a>
+                        <div class="flex items-center justify-center ">
+                            <span class="text-2xl font-semibold text-red-600 mr-2">$4.249,00</span>
+                            <span class="text-sm line-through text-gray-400">$8.498,00</span>
                         </div>
                     </div>
+
+                    <!-- Actions Buttons -->
+                    <div class="flex items-center justify-center gap-x-2">
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300">Add
+                            to Cart</a>
+
+                        <!-- Shop now botton -->
+                        <a href="#"
+                            class="inline-block p-2 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300">Buy
+                            Now</a>
+                    </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </section>
