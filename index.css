@@ -1,3 +1,7 @@
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+#hero-section {
+  background-image: url('assets/images/banner-hero-section/banner-bg.png');
+}
