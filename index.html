@@ -435,7 +435,7 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="categories" class=" mx-auto px-6 py-12 flex justify-center">
+    <section id="categories" class="mx-auto px-6 py-12 flex justify-center">
         <div class="container">
             <h2 class="text-2xl md:text-3xl font-bold text-zinc-950 text-left mb-4">Shop by Category</h2>
 
@@ -1698,256 +1698,82 @@
             </div>
     </section>
 
-    <!-- 2 Deals Square Section -->
-    <section id="deals-of-the-day" class="container mx-auto px-4 py-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- Up To 50% OFF -->
+    <section id="up-to-50-off" class="flex ">
+        <div class="container p-4 grid grid-cols-2 grid-rows-2 gap-4 mx-auto w-full h-full">
+            <div class="flex items-center justify-between bg-white shadow-lg rounded-md overflow-hidden">
+                <div class="h-full w-full flex flex-col gap-y-4 p-12 justify-left">
+                    <!-- title -->
+                    <h4 class="text-xs tracking-widest uppercase">Title Card</h4>
 
-            <!-- First Square container with 4 Offer Cards -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl md:text-3xl font-bold text-zinc-950 text-left">Holiday Specials: Treat Yourself
-                        to Savings!</h2>
-                    <a href="#all-products"
-                        class="text-blue-800 hover:text-blue-600 text-lg font-medium underline cursor-pointer transition duration-300">See
-                        more products</a>
+                    <!-- Description Card -->
+                    <p class="uppercase text-2xl font-medium">Até 50% OFF <br> Ative os cupons</p>
+
+                    <!-- See More -->
+                    <button
+                        class="inline-flex self-start shrink-0 items-center justify-center px-6 py-2 rounded text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transtion-all duration-300"
+                        type="button">See More</button>
                 </div>
 
-                <!-- Product Cards  -->
-                <div class="grid grid-cols-2 gap-4 gap-x-2">
-                    <!-- Offer 1 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/blackdeckerkit.png" alt="Kit Black & Decker"
-                                class="w-full h-full object-cover object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Kit Black & Decker</h3>
-
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$1.299</span>
-                        <span class="text-green-600 font-semibold text-lg">$1.169 <span class="text-xs underline">10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-
-                    <!-- Offer 2 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/catbed.png" alt="catbed"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Cat Bed</h3>
-
-                        <!-- Prices and Discount    -->
-                        <span class="text-gray-500 line-through text-md">$999</span>
-                        <span class="text-green-600 font-semibold text-lg">$899 <span class="text-xs underline">10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-
-                    <!-- Offer 3 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/nikeair270.png" alt="Nike Air Max"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Nike Air Max 270</h3>
-
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$150</span>
-                        <span class="text-green-600 font-semibold text-lg">$135 <span class="text-xs underline">10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-
-                    <!-- Offer 4 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/kit-workout.png" alt="Kit-workout"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Kit-workout</h3>
-
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$50</span>
-                        <span class="text-green-600 font-semibold text-lg">$45<span class="text-xs underline"> 10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
+                <div class="shrink-0 h-64 w-64 text-black bg-white">
+                    <img src="https://github.com/andrea-guarneri.png" alt="">
                 </div>
             </div>
 
-            <!-- Second Square container with 4 Offer Cards -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-zinc-950 text-left">Buy More, Save More: Discounts on Bulk
-                        Purchases!</h2>
-                    <a href="#all-products"
-                        class="text-blue-800 hover:text-blue-600 text-lg font-medium underline cursor-pointer transition duration-300">See
-                        more products</a>
+            <div class="flex items-center justify-between bg-white shadow-lg rounded-md overflow-hidden">
+                <div class="h-full w-full flex flex-col gap-y-4 p-12 justify-left">
+                    <!-- title -->
+                    <h4 class="text-xs tracking-widest uppercase">Title Card</h4>
+
+                    <!-- Description Card -->
+                    <p class="uppercase text-2xl font-medium">Até 50% OFF <br> Ative os cupons</p>
+
+                    <!-- See More -->
+                    <button
+                        class="inline-flex self-start shrink-0 items-center justify-center px-6 py-2 rounded text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transtion-all duration-300"
+                        type="button">See More</button>
                 </div>
 
-                <!-- Product Cards Grid -->
-                <div class="grid grid-cols-2 gap-4">
-                    <!-- Offer 1 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm gap-x-2">
+                <div class="shrink-0 h-64 w-64 text-black bg-white">
+                    <img src="https://github.com/andrea-guarneri.png" alt="">
+                </div>
+            </div>
 
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/dawsonsofa.png" alt="Dawson Sofa by Castlery"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
+            <div class="flex items-center justify-between bg-white shadow-lg rounded-md overflow-hidden">
+                <div class="h-full w-full flex flex-col gap-y-4 p-12 justify-left">
+                    <!-- title -->
+                    <h4 class="text-xs tracking-widest uppercase">Title Card</h4>
 
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Dawson Sofa by Castlery</h3>
+                    <!-- Description Card -->
+                    <p class="uppercase text-2xl font-medium">Até 50% OFF <br> Ative os cupons</p>
 
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$1.399​</span>
-                        <span class="text-green-600 font-semibold text-lg ml-1">$1.259<span class="text-xs underline">
-                                10%
-                                OFF</span></span>
+                    <!-- See More -->
+                    <button
+                        class="inline-flex self-start shrink-0 items-center justify-center px-6 py-2 rounded text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transtion-all duration-300"
+                        type="button">See More</button>
+                </div>
 
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
+                <div class="shrink-0 h-64 w-64 text-black bg-white">
+                    <img src="https://github.com/andrea-guarneri.png" alt="">
+                </div>
+            </div>
 
-                    <!-- Offer 2 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+            <div class="flex items-center justify-between bg-white shadow-lg rounded-md overflow-hidden">
+                <div class="h-full w-full flex flex-col gap-y-4 p-12 justify-left">
+                    <!-- title -->
+                    <h4 class="text-xs tracking-widest uppercase">Title Card</h4>
 
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/firestick4kmax.png" alt="Fire TV Stick 4K Max"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
+                    <!-- Description Card -->
+                    <p class="uppercase text-2xl font-medium">Até 50% OFF <br> Ative os cupons</p>
 
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Fire TV Stick 4K Max</h3>
+                    <!-- See More -->
+                    <button
+                        class="inline-flex self-start shrink-0 items-center justify-center px-6 py-2 rounded text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transtion-all duration-300"
+                        type="button">See More</button>
+                </div>
 
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$54</span>
-                        <span class="text-green-600 font-semibold text-lg">$49<span class="text-xs underline"> 10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-
-                    <!-- Offer 3 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/veuve_clicquot.jpg"
-                                alt="Veuve Clicquot Brut Champagne" class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            Veuve Clicquot Brut Champagne</h3>
-
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$75</span>
-                        <span class="text-green-600 font-semibold text-lg">$67<span class="text-xs underline"> 10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-
-                    <!-- Offer 4 -->
-                    <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-
-                        <!-- Product Image -->
-                        <div class="aspect-w-2 aspect-h-2">
-                            <img src="assets/images/deals-of-the-day/womanbag.jpeg" alt="leather gray Michael Kors bag"
-                                class="w-full h-full object-cover rounded-md mb-2">
-                        </div>
-
-                        <!-- Product Name -->
-                        <h3
-                            class="text-xs md:text-sm font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            leather gray Michael Kors bag</h3>
-
-                        <!-- Prices and Discount -->
-                        <span class="text-gray-500 line-through text-md">$300</span>
-                        <span class="text-green-600 font-semibold text-lg">$270<span class="text-xs underline"> 10%
-                                OFF</span></span>
-
-                        <!-- Free Shipping -->
-                        <div class="flex items-center mt-2">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-4 h-5 mr-1">
-                            <p class="text-xs md:text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
+                <div class="shrink-0 h-64 w-64 text-black bg-white">
+                    <img src="https://github.com/andrea-guarneri.png" alt="">
                 </div>
             </div>
         </div>
