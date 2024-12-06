@@ -115,13 +115,13 @@
                 <div class="flex items-center flex-col sm:flex-row justify-between gap-x-4">
 
                     <!-- Best-selling Title -->
-                    <h2 class="text-white text-2xl md:text-3xl font-bold text-left hover:underline">Black
+                    <h2 class="text-white text-2xl font-bold text-left hover:underline">Black
                         Friday
                         Deals</h2>
 
                     <!-- See More Products Link -->
                     <a href="#all-products"
-                        class="text-white hover:text-zinc-300 text-base sm:text-lg font-medium underline cursor-pointer transition duration-300">See
+                        class="text-white hover:text-zinc-300 text-sm font-medium underline cursor-pointer transition duration-300">See
                         more products</a>
                 </div>
 
@@ -435,9 +435,9 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="categories" class="mx-auto px-6 py-12 flex justify-center">
-        <div class="container">
-            <h2 class="text-2xl md:text-3xl font-bold text-zinc-950 text-left mb-4">Shop by Category</h2>
+    <section id="categories" class="flex items-center justify-center">
+        <div class=" container py-8">
+            <h2 class="text-2xl font-bold text-zinc-950 text-left mb-4">Shop by Category</h2>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-6 md:gap-4 lg:gap-6 text-center">
 
@@ -587,11 +587,11 @@
                 <!-- Section Header -->
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-x-4">
                     <!-- Best-selling Title -->
-                    <h2 class="text-2xl md:text-3xl font-bold text-white text-left hover:underline">Best Selling</h2>
+                    <h2 class="text-2xl font-bold text-white text-left hover:underline">Best Selling</h2>
 
                     <!-- See More Products Link -->
                     <a href="#all-products"
-                        class="text-white hover:text-zinc-300 text-base sm:text-lg font-medium underline cursor-pointer transition duration-300">See
+                        class="text-white hover:text-zinc-300 text-sm font-medium underline cursor-pointer transition duration-300">See
                         more products</a>
                 </div>
 
@@ -930,8 +930,8 @@
     </section>
 
     <!-- Deal of the Day and Banner Deals Section  -->
-    <section id="deals-of-the-day" class="container mx-auto px-4 py-4 sm:py-6 md:py-8 xl:py-10">
-        <div class="grid grid-cols-1 gap-y-4 lg:gap-y-0 lg:grid-cols-[3fr,9fr] gap-x-4 xl:gap-x-6">
+    <section id="deals-of-the-day" class="flex items-center justify-center">
+        <div class="container grid grid-cols-1 lg:grid-cols-[3fr,9fr] gap-y-4 lg:gap-y-0 gap-x-4 xl:gap-x-6 py-8">
 
             <!-- Featured Deal Card -->
             <div class="flex flex-col gap-y-2 lg:gap-y-4 bg-white rounded-lg shadow-lg p-4 2xl:p-6 relative">
@@ -1699,10 +1699,9 @@
     </section>
 
     <!-- Up To 50% OFF section 1 -->
-    <section id="up-to-50-off" class="flex ">
+    <section id="up-to-50-off" class="flex items-center justify-center">
         <!-- Container div cards -->
-        <div
-            class="container p-4 flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-4 2xl:gap-8 mx-auto w-full h-full">
+        <div class="container flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-4 2xl:gap-6 w-full h-full py-8">
             <!-- CARD 1 -->
             <div class="flex justify-center items-center shadow-lg rounded-md overflow-hidden bg-white">
                 <div
@@ -1760,7 +1759,7 @@
                     <img src="assets/images/up-to-50-off/bicycle.jpg" alt="cyclist">
                 </div>
             </div>
-            
+
             <!-- CARD 3 -->
             <div class="flex justify-center items-center shadow-lg rounded-md overflow-hidden bg-white">
                 <div
@@ -1786,7 +1785,7 @@
                     <img src="assets/images/up-to-50-off/men-s-fragrance.jpg" alt="mens-fragrance">
                 </div>
             </div>
-            
+
             <!-- CARD 4 -->
             <div class="flex justify-center items-center shadow-lg rounded-md overflow-hidden bg-white">
                 <div
@@ -1817,250 +1816,345 @@
     </section>
 
     <!-- Best Sellers in Trees & Christmas Decorations -->
-    <section id="best-sellers-Christmas" class="container mx-auto px-6 py-12">
-        <div class="bg-white rounded-lg p-8">
+    <section id="best-sellers-Christmas" class="flex items-center justify-center">
+        <div class="container flex flex-col gap-y-6 w-full rounded-lg py-8 px-4 lg:px-0">
+
             <!-- Section Title and Link -->
-            <div class="flex items-center gap-x-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-zinc-950 text-left">Best Sellers in Trees & Christmas
+            <header class="flex flex-col sm:flex-row items-center sm:justify-between">
+                <h3 class="text-zinc-950 font-bold text-2xl cursor-pointer hover:underline">
+                    Christmas
                     Decorations
-                </h2>
+                </h3>
 
-                <a href="all-best-sellers"
-                    class="text-blue-800 hover:text-blue-600 text-lg font-medium underline cursor-pointer transition duration-300">See
-                    more products</a>
-            </div>
+                <a href="#"
+                    class="text-sm font-semibold underline text-blue-600 hover:text-blue-700 transition-all duration-300">See
+                    more
+                    products</a>
+            </header>
 
-            <!-- Product Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-
-                <!-- Product Card 1 -->
-                <div class="rounded-lg px-4 py-4">
+            <!-- Products List -->
+            <div
+                class="grid grid-cols-2 gap-2 min-[400px]:gap-4 md:grid-cols-3 lg:grid-cols-6 min-[400px]:px-4 sm:px-0">
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
                     <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/xmas180tree.png" alt="Christmas Tree"
-                            class="w-full h-full object-cover rounded-md">
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
+                        </div>
                     </div>
 
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        180cm Xmas Christmas Tree
-                    </h3>
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
 
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$129</span>
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
 
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$119</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">8% OFF</span>
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
                         </div>
 
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
+                    <!-- Product Image -->
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
                         </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
+
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
+
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
+                        </div>
+
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
+                    <!-- Product Image -->
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
+
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
+
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
+                        </div>
+
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
+                    <!-- Product Image -->
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
+
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
+
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
+                        </div>
+
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
+                    <!-- Product Image -->
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
+
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
+
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
+                        </div>
+
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg flex flex-col gap-y-2 p-1 shadow-lg">
+                    <!-- Product Image -->
+                    <div class="h-32 min-[400px]:h-40 overflow-hidden flex items-center justify-center">
+                        <!-- Image Card -->
+                        <div class="h-full w-full max-w-32 min-[400px]:max-w-40 ">
+                            <img src="assets/images/best-sellers-christmas/xmastree150.png" alt=""
+                                class="rounded h-full w-full object-cover">
+                            <!-- <img src="assets/images/flamengo.webp" alt="" class="h-full w-full object-cover rounded"> -->
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="flex flex-col sm:gap-y-1 p-1">
+                        <!-- Product Title -->
+                        <h4 class="text-base font-semibold line-clamp-2">X Master Tree 150 X Master Tree 150 X Master
+                            X Master Tree 150 Tree 150</h4>
+
+                        <!-- Ratings -->
+                        <div class="flex gap-x-2 items-center ">
+                            <!-- Rating Number -->
+                            <span class="text-sm text-blue-500 font-semibold">4.4</span>
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                                <img src="./assets/icons/star-gold-favorite.png" class="h-3 sm:h-4 w-3 sm:w-4"
+                                    alt="star gold filled">
+                            </div>
+
+                            <!-- Sales Number -->
+                            <span class="max-[399px]:hidden text-xs text-zinc-800">(3591)</span>
+                        </div>
+
+                        <footer class=" flex justify-between lg:flex-col lg:gap-y-2">
+                            <!-- Pricing -->
+                            <div
+                                class="flex w-full flex-col-reverse min-[400px]:flex-row lg:flex-col-reverse gap-x-2 items-start min-[400px]:items-center lg:items-start ">
+                                <!-- Old Price -->
+                                <span
+                                    class="font-semibold text-xl sm:text-2xl lg:text-xl 2xl:text-2xl text-green-600">$1358.99</span>
+                                <span
+                                    class="font-medium text-xs sm:text-sm lg:text-sm xl:text-base text-zinc-400 line-through">$1325.99</span>
+                            </div>
+                        </footer>
                     </div>
                 </div>
 
-                <!-- Product Card 2 -->
-                <div class="rounded-lg px-4 py-4">
-                    <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/led-xmas.png"
-                            alt="LED Christmas Lights with remote control"
-                            class="w-full h-full object-cover rounded-md">
-                    </div>
 
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        LED Christmas Lights with remote control
-                    </h3>
-
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$50</span>
-
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$46</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">8% OFF</span>
-                        </div>
-
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="rounded-lg px-4 py-4">
-                    <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/cascade-led.jpg"
-                            alt="400 LED External Cascade Lights" class="w-full h-full object-cover rounded-md">
-                    </div>
-
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        400 LED External Cascade Lights
-                    </h3>
-
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$70</span>
-
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$64</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">8% OFF</span>
-                        </div>
-
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 4 -->
-                <div class="rounded-lg px-4 py-4">
-                    <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/christmas-projector.jpg"
-                            alt="Christmas projector laser light outdoor" class="w-full h-full object-cover rounded-md">
-                    </div>
-
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        Christmas projector laser light outdoor
-                    </h3>
-
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$300</span>
-
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$168</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">44% OFF</span>
-                        </div>
-
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 5 -->
-                <div class="rounded-lg px-4 py-4">
-                    <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/xmas-230tree.png" alt="230cm Xmas Christmas Tree"
-                            class="w-full h-full object-cover rounded-md">
-                    </div>
-
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        230cm Xmas Christmas Tree
-                    </h3>
-
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$250</span>
-
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$142</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">43% OFF</span>
-                        </div>
-
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 6 -->
-                <div class="rounded-lg px-4 py-4">
-                    <!-- Product Image -->
-                    <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/best-sellers-christmas/xmastree150.png" alt="150cm Xmas Christmas Tree"
-                            class="w-full h-full object-cover rounded-md">
-                    </div>
-
-                    <!-- Product Title -->
-                    <h3
-                        class="text-lg font-semibold mt-4 cursor-pointer hover:text-blue-600 transition-all duration-300">
-                        150cm Xmas Christmas Tree
-                    </h3>
-
-                    <!-- Princing -->
-                    <div class="mt-2">
-                        <!-- Old price -->
-                        <span class="text-gray-500 line-through text-lg">$100</span>
-
-                        <!-- New Price -->
-                        <div class="flex items-center">
-                            <span class="text-2xl font-semibold text-green-600">$80</span>
-
-                            <!-- Discount -->
-                            <span class="text-green-600 text-md ml-2">20% OFF</span>
-                        </div>
-
-                        <!-- Free shipping -->
-                        <div class="flex items-center mt-2 cursor-pointer">
-                            <img src="assets/icons/delivery.png" alt="Delivery icon" class="w-5 h-5 mr-1">
-
-                            <p class="text-sm text-zinc-400"> <span class="font-bold text-green-600">Free
-                                    shipping</span> for first
-                                purchase</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -2095,7 +2189,9 @@
                     <!-- Product Title -->
                     <h3
                         class="text-xl font-semibold mt-4 hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                        JBL Live Beam 3 - True Wireless Noise-Cancelling Closed-Stick Earbuds, 48Hrs Total Playback, Wireless Charging, 6 Mics for Perfect Calls, Multi-Point Connection, IP55 Waterproof and dustproof (Black)</h3>
+                        JBL Live Beam 3 - True Wireless Noise-Cancelling Closed-Stick Earbuds, 48Hrs Total Playback,
+                        Wireless Charging, 6 Mics for Perfect Calls, Multi-Point Connection, IP55 Waterproof and
+                        dustproof (Black)</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2170,7 +2266,9 @@
                     <!-- Product Title -->
                     <h3
                         class="text-xl font-semibold mt-4 hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                        Bwine F7 GPS Drones with Camera for Adults 4K Night Vision, 3-Aix Gimbal, 2Mile Long Range, 75Mins Flight Time Professional Drone with 3 Battery, Auto Return+Follow Me+Fly Around+Beginner Mode for Kid</h3>
+                        Bwine F7 GPS Drones with Camera for Adults 4K Night Vision, 3-Aix Gimbal, 2Mile Long Range,
+                        75Mins Flight Time Professional Drone with 3 Battery, Auto Return+Follow Me+Fly Around+Beginner
+                        Mode for Kid</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2207,7 +2305,8 @@
                     <!-- Product Title -->
                     <h3
                         class="text-xl font-semibold mt-4 hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                        BL Boombox 3 Black Portable Bluetooth Speaker with Massive Sound, Deepest Bass, IPX7 Waterproof, 24H Playtime, PartyBoost</h3>
+                        BL Boombox 3 Black Portable Bluetooth Speaker with Massive Sound, Deepest Bass, IPX7 Waterproof,
+                        24H Playtime, PartyBoost</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2277,7 +2376,9 @@
                     <!-- Product Title -->
                     <h3
                         class="text-xl font-semibold mt-4 hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                        Breville the Barista Express Impress Espresso Machine with Grinder & Milk Frother, Espresso Maker with Assisted Tamping, Cappuccino & Latte Machine for Home, BES876BSS, Brushed Stainless Steel</h3>
+                        Breville the Barista Express Impress Espresso Machine with Grinder & Milk Frother, Espresso
+                        Maker with Assisted Tamping, Cappuccino & Latte Machine for Home, BES876BSS, Brushed Stainless
+                        Steel</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2573,7 +2674,7 @@
                         type="button">See More</button>
                 </div>
 
-                <!-- Image Card --> 
+                <!-- Image Card -->
                 <div
                     class="shrink-0 max-h-36 max-w-36 min-[400px]:max-h-44 min-[400px]:max-w-44  min-[500px]:max-h-52 min-[500px]:max-w-52 min-[600px]:max-h-56 min-[600px]:max-w-56 md:max-h-64 md:md:max-w-64 lg:max-h-52 lg:max-w-52 xl:max-w-56 xl:max-h-56 2xl:max-h-60 2xl:max-w-60 h-full w-full  text-black bg-white">
                     <img src="assets/images/up-to-50-off/glasses.jpeg" alt="glasses">
@@ -2608,7 +2709,7 @@
                     <img src="assets/images/up-to-50-off/pets.jpg" alt="pets">
                 </div>
             </div>
-            
+
             <!-- CARD 3 -->
             <div class="flex justify-center items-center shadow-lg rounded-md overflow-hidden bg-white">
                 <div
@@ -2637,7 +2738,7 @@
                     <img src="assets/images/up-to-50-off/wine.jpg" alt="wine">
                 </div>
             </div>
-            
+
             <!-- CARD 4 -->
             <div class="flex justify-center items-center shadow-lg rounded-md overflow-hidden bg-white">
                 <div
@@ -2802,14 +2903,17 @@
                 <div class="rounded-lg px-4 py-4">
                     <!-- Product Image -->
                     <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/latest-tec/happrun_projector_.jpg" alt="HAPPRUN Projector, Google TV Projector with WiFi and Bluetooth, 4K Support"
+                        <img src="assets/images/latest-tec/happrun_projector_.jpg"
+                            alt="HAPPRUN Projector, Google TV Projector with WiFi and Bluetooth, 4K Support"
                             class="w-full h-full object-cover rounded-md">
                     </div>
 
                     <!-- Product Title -->
                     <h3
                         class="text-lg font-semibold mt-4 hover:text-blue-600 cursor-pointer transition-all duration-300">
-                        HAPPRUN Projector, Google TV Projector with WiFi and Bluetooth, 4K Support, Netflix-Licensed, HDR 10+, Native 1080P Outdoor Movie Projector, Smart Home Theater Projector Support Google Cast & Airplay</h3>
+                        HAPPRUN Projector, Google TV Projector with WiFi and Bluetooth, 4K Support, Netflix-Licensed,
+                        HDR 10+, Native 1080P Outdoor Movie Projector, Smart Home Theater Projector Support Google Cast
+                        & Airplay</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2846,7 +2950,8 @@
                     <!-- Product Title -->
                     <h3
                         class="text-lg font-semibold mt-4 hover:text-blue-600 cursor-pointer transition-all duration-300">
-                        The Apple Vision Pro 1TB model offers cutting-edge mixed reality experiences with a sleek design, powered by Apple's M2 chip and R1 chip for ultra-low latency</h3>
+                        The Apple Vision Pro 1TB model offers cutting-edge mixed reality experiences with a sleek
+                        design, powered by Apple's M2 chip and R1 chip for ultra-low latency</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -2883,7 +2988,9 @@
                     <!-- Product Title -->
                     <h3
                         class="text-lg font-semibold mt-4 hover:text-blue-600 cursor-pointer transition-all duration-300">
-                        SAMSUNG Galaxy Z Flip 6 AI Cell Phone, 512GB Unlocked Android Smartphone, FlexCam, Photo Assist, Camcorder Mode, Live Interpreter, Foldable Design, 2024, US 1 Yr Manufacturer Warranty, Mint</h3>
+                        SAMSUNG Galaxy Z Flip 6 AI Cell Phone, 512GB Unlocked Android Smartphone, FlexCam, Photo Assist,
+                        Camcorder Mode, Live Interpreter, Foldable Design, 2024, US 1 Yr Manufacturer Warranty, Mint
+                    </h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -3711,7 +3818,8 @@
                     <!-- Product Title -->
                     <h3
                         class="text-lg font-semibold hover:text-blue-600 transition-all duration-300 mt-4 cursor-pointer">
-                        Amazon Echo Show 8 (newest model), Smart display with 2x the bass and clearer sound, Charcoal</h3>
+                        Amazon Echo Show 8 (newest model), Smart display with 2x the bass and clearer sound, Charcoal
+                    </h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
@@ -3740,8 +3848,8 @@
                 <div class="rounded-lg px-4 py-4">
                     <!-- Product Image -->
                     <div class="flex items-center justify-center cursor-pointer">
-                        <img src="assets/images/browsing-history/nikeair270.png"
-                            alt="nike air 270" class="w-full h-full object-cover rounded-md">
+                        <img src="assets/images/browsing-history/nikeair270.png" alt="nike air 270"
+                            class="w-full h-full object-cover rounded-md">
                     </div>
 
                     <!-- Product Title -->
@@ -3783,7 +3891,8 @@
                     <!-- Product Title -->
                     <h3
                         class="text-lg font-semibold hover:text-blue-600 transition-all duration-300 mt-4 cursor-pointer">
-                        The Xbox Series X features an 8-core Zen 2 CPU, 12 teraflops RDNA 2 GPU, 16 GB GDDR6 RAM, and 1 TB SSD storage. It supports 4K gaming up to 120 FPS, with ray tracing and Dolby Vision​</h3>
+                        The Xbox Series X features an 8-core Zen 2 CPU, 12 teraflops RDNA 2 GPU, 16 GB GDDR6 RAM, and 1
+                        TB SSD storage. It supports 4K gaming up to 120 FPS, with ray tracing and Dolby Vision​</h3>
 
                     <!-- Pricing -->
                     <div class="mt-2">
